@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="weather-app">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="city" id="city">let's talk</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <p class="description" id="weather-description">
+              about the weather
+            </p>
+            <p class="current-temp"><span id="current-temp">-</span>°</p>
+          </div>
+          <div class="col-6">
+            <p class="date" id="current-time">day, 00:00</p>
+            <img class="icon-big" src="images/013-cloudy.png" alt="sun" />
+          </div>
+        </div>
+
+        <p class="units">
+          <a href="#" id="celsius" class="celsius">°C</a>
+          <a href="#" id="fahrenheit" class="fahrenheit">°F</a>
+        </p>
+        <div class="row">
+          <div class="col-12">
+            <p class="barometer">
+              Precipitation <span id="precipitation">-</span>
+              <br />
+              Wind <span id="wind">-</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-11">
+            <div class="search">
+              <form class="search-bar">
+                <label for="changeCity" class="sr-only">Change city</label>
+                <input
+                  type="changeCity"
+                  class="change-city"
+                  id="change-city"
+                  placeholder="Change city"
+                  autocomplete="off"
+                  autofocus="on"
+                />
+                <input type="submit" value="🔎" class="search-button" />
+              </form>
+            </div>
+            <button class="location-button" id="current-location">
+              Current location
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
