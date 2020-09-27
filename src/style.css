@@ -209,3 +209,10 @@
     outline: none;
   }
   
+  .code {
+    margin: 5px;
+    position: relative;
+    left: 20%;
+    font-size: 12px;
+    font-family: monospace;
+  }
